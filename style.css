@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    display: block;
+    opacity: 0.65;
+    transition: 0.5s;
+}
+
+.site-header ul {
+    display: flex;
+    gap: 20px;
+}
+.site-header ul li {
+    padding: 15px;
+    list-style-type: none;
+}
+
+.site-header ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif ;
+}
+.section-main{
+    height: 75vh;
+    background-image: url(https://www.remotelands.com/storage/media/5793/conversions/b210929001-banner-size.jpg);
+    background-repeat: no-repeat ;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+}
+
+.content{
+    height: 30rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info h1{
+    font-size: 5rem;
+    font-family: 'Courgette', cursive;
+    background-image: linear-gradient(60deg, #00B5E2, #EF3340, #509E2F);
+    background-clip: text;
+    color: transparent;
+}
+.info p{
+    font-size: 2.5rem;
+    font-style: italic;
+    animation: fire 15s infinite;
+}
+@keyframes fire {
+    0%{
+        color: #a84e32;
+    }
+    25%{
+        color: #a86b32;
+    }
+    50%{
+        color: #a87532;
+    }
+    75%{
+        color: #a87d32;
+    }
+    100%{
+        color: #a87f32;
+    }
+}
+
+
+
+
+
+/*section 2*/
+
+.content-destinations{
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.content-destinations h3{
+    font-size: 32px;
+    font-family: 'Courgette', cursive;
+}
+
+.content-destinations p{
+    font-size: 21px;
+}
+
+.section-destinations .places{
+    float: left;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.card{
+    text-align: center;
+    width: 25rem;
+    height: 36rem;
+    border: 1px solid #a3a3a3;
+    padding: 12px;
+    line-height: 27px;
+}
+.card h2{
+    font-family: 'Courgette', cursive;
+    font-size: 28px;
+}
+.card p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.grid{
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+
+/*section 3*/
+
+.employee{
+    text-align: center;
+}
+.employee img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.section-team h3{
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Courgette', cursive
+}
+figure{
+    border: 1px solid black;
+    border-radius: 50px;
+}
+figcaption{
+    font-size: 22px;
+}
